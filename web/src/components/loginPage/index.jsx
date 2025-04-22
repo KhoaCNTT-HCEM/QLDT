@@ -3,16 +3,16 @@ import { useNavigate, useLocation } from 'react-router-dom';
 import "./style.css";
 import logo from "../../assets/HCEM-logo-Blue-VI.png";
 import ArrowRightIcon from '../../icon/loginAndRegister/ArrowRightIcon';
-import { Store } from "../../Store.jsx"
+import { Store } from "../../Store.jsx";
 
 const LoginPage = () => {
-    // const navigate = useNavigate();
-    // const store = useContext(Store);
-    // useEffect(() => {
-    //     if (store.currentUser) {
-    //         navigate("/");
-    //     }
-    // }, []);
+    const navigate = useNavigate();
+    const store = useContext(Store);
+    useEffect(() => {
+        if (store.currentUser) {
+            navigate("/");
+        }
+    }, []);
 
     // const location = useLocation();
     // useEffect(() => {
@@ -50,12 +50,12 @@ const LoginPage = () => {
                     <h1>Đăng Nhập</h1>
                     <form className='loginForm' >
                         <div className="row">
-                            <label htmlFor="id">ID:</label>
+                            <label htmlFor="email">Email:</label>
                             <input
                                 type="text"
-                                id="id"
+                                id="email"
                                 placeholder='Nhập id giáo viên'
-                                name='id'
+                                name='email'
 
                             />
                         </div>
@@ -76,7 +76,12 @@ const LoginPage = () => {
 
                     >
                         <p>Bạn chưa có tài khoản?</p>
-                        <div className='redirectToRegister'>
+                        <div 
+                            className='redirectToRegister'
+                            onClick={() => {
+                                navigate("/register");
+                            }}
+                        >
                             <p>Đăng ký</p>
                             <ArrowRightIcon />
                         </div>

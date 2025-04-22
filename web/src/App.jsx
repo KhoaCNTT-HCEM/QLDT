@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import LoginPage from './components/loginPage';
+import RegisterPage from './components/registerPage';
 
 import './App.css'
 
@@ -9,7 +10,10 @@ function App() {
 
   return (
     <div className='App'>
-      <LoginPage/>
+      <Routes>
+        <Route path='/' element={<LoginPage />} />
+        <Route path="/register" element={<RegisterPage />} />
+      </Routes>
     </div>
   )
 }
