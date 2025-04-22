@@ -1,8 +1,8 @@
-/* .loginPage {
-    height: 765.6px;
-    position: relative;
+.loginPage {
+    /* height: 765.6px; */
+    /* position: relative; */
     color: #FFFFFF;
-} */
+}
 
 .loginPage .background {
     width: 100%;
@@ -33,7 +33,6 @@
 
 .loginPage .overlay .content h1 {
     text-align: center;
-    color: #FFFFFF;
 }
 
 .loginPage .overlay .content .loginForm {
@@ -51,18 +50,17 @@
 }
 
 .loginPage .overlay .content .loginForm .row label {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
+    margin-left: 2%;
     margin-bottom: 5px;
-    margin-left: 10px;
     cursor: pointer;
-    color: #FFFFFF;
     display: flex;
 }
 
 .loginPage .overlay .content .loginForm .row input {
-    height: 60px;
-    font-size: 22px;
+    height: 50px;
+    font-size: 18px;
     outline: none;
     border: 1px solid #FFFFFF;
     border-radius: 5px;
@@ -103,10 +101,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
+    gap: 5px;
     margin-top: 15px;
-    color: #FFFFFF;
-    font-size: 22px;
 }
 
 .loginPage .overlay .content .groupRedirectToRegister .redirectToRegister {
@@ -123,7 +119,6 @@
 .loginPage .overlay .content .groupRedirectToRegister .redirectToRegister p {
     font-weight: bold;
     z-index: 1;
-    color: #FFFFFF;
 }
 
 .loginPage .overlay .content .groupRedirectToRegister .redirectToRegister svg {
@@ -132,8 +127,7 @@
 }
 
 .loginPage .overlay .content .groupRedirectToRegister .redirectToRegister:hover {
-    width: 25%;
-    height: 150%;
+    width: 95px;
     background-color: #3563E9;
     padding: 3px 6px 3px 10px;
 }
