@@ -30,7 +30,7 @@ const RegisterPage = () => {
               />
             </div>
             <div className='row'>
-              <label htmlFor="username">Tên giáo viên</label>
+              <label htmlFor="username">Tên giáo viên:</label>
               <input
                 type="text"
                 id='username'
@@ -39,7 +39,7 @@ const RegisterPage = () => {
               />
             </div>
             <div className="row">
-              <label htmlFor="password">Mật khẩu</label>
+              <label htmlFor="password">Mật khẩu:</label>
               <input
                 type="password"
                 id='password'
@@ -48,7 +48,7 @@ const RegisterPage = () => {
               />
             </div>
             <div className='row'>
-              <label htmlFor="confirmPassword">Xác nhận mật khẩu</label>
+              <label htmlFor="confirmPassword">Xác nhận mật khẩu:</label>
               <input
                 type="password"
                 id='confirmPassword'
