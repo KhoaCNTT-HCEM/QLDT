@@ -1,6 +1,6 @@
 .registerPage {
-    /* height: 765.6px;
-    position: relative; */
+     /* height: 765.6px; */
+    position: relative; 
     color: #FFFFFF;
 }
 
@@ -18,17 +18,19 @@
     align-items: center;
     justify-content: center;
     /* background-color: rgba(0, 0, 0, 0.5); */
-    border-image: fill 0 radial-gradient(#00000080, #ffffffbb);
+    /* border-image: fill 0 radial-gradient(#00000080, #ffffffff); */
 }
 
 .registerPage .overlay .content {
     width: 500px;
+    /* height: 28%; */
     padding: 35px 50px;
     display: flex;
     flex-direction: column;
     border-radius: 20px;
-    /* background-color: rgba(0, 0, 0, 0.75); */
+    background-color:rgb(102 102 102 / 58%);
     backdrop-filter: blur(50px);
+    margin-top: 50%;
 }
 
 .registerPage .overlay .content h1 {
@@ -70,7 +72,7 @@
 }
 
 .registerPage .overlay .content .registerForm .row input::placeholder {
-    color: #FFFFFF80;
+    color: #fffdfd80;
 }
 
 .registerPage .overlay .content .registerForm .row input:focus {
@@ -101,12 +103,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5px;
+    gap: 15px;
     margin-top: 15px;
 }
 
 .registerPage .overlay .content .groupRedirectToLogin .redirectToLogin {
-    width: 73px;
+    /* width: 73px; */
     display: flex;
     align-items: center;
     gap: 2px;

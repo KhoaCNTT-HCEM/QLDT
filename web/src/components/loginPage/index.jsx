@@ -4,6 +4,8 @@ import "./style.css";
 import logo from "../../assets/HCEM-logo-Blue-VI.png";
 import ArrowRightIcon from '../../icon/loginAndRegister/ArrowRightIcon';
 import { Store } from "../../Store.jsx";
+import LogoHeader from '../../icon/LogoHeader/LogoHeader.jsx';
+
 
 const LoginPage = () => {
     const navigate = useNavigate();
@@ -43,51 +45,58 @@ const LoginPage = () => {
     // };
 
     return (
-        <div className='loginPage'>
-            <img className='backgroud' src={logo} alt="" />
-            <div className='overlay'>
-                <div className="content">
-                    <h1>Đăng Nhập</h1>
-                    <form className='loginForm' >
-                        <div className="row">
-                            <label htmlFor="email">Email:</label>
-                            <input
-                                type="text"
-                                id="email"
-                                placeholder='Nhập id giáo viên'
-                                name='email'
+        <div>
+            <header>
+                <LogoHeader/>
+            </header>
+            <main>
+                <div className='loginPage'>
+                    {/* <img className='backgroud' src={logo} alt="" /> */}
+                    <div className='overlay'>
+                        <div className="content">
+                            <h1>Đăng Nhập</h1>
+                            <form className='loginForm' >
+                                <div className="row">
+                                    <label htmlFor="email">Email:</label>
+                                    <input
+                                        type="text"
+                                        id="email"
+                                        placeholder='Nhập id giáo viên'
+                                        name='email'
 
-                            />
-                        </div>
-                        <div className="row">
-                            <label htmlFor="password">Mật khẩu:</label>
-                            <input
-                                type="password"
-                                id='password'
-                                placeholder='Nhập mậy khẩu'
-                                name='password'
+                                    />
+                                </div>
+                                <div className="row">
+                                    <label htmlFor="password">Mật khẩu:</label>
+                                    <input
+                                        type="password"
+                                        id='password'
+                                        placeholder='Nhập mậy khẩu'
+                                        name='password'
 
-                            />
-                        </div>
-                        <button type='submit'>Đăng nhập</button>
-                    </form>
-                    <div
-                        className="groupRedirectToRegister"
+                                    />
+                                </div>
+                                <button type='submit'>Đăng nhập</button>
+                            </form>
+                            <div
+                                className="groupRedirectToRegister"
 
-                    >
-                        <p>Bạn chưa có tài khoản?</p>
-                        <div 
-                            className='redirectToRegister'
-                            onClick={() => {
-                                navigate("/register");
-                            }}
-                        >
-                            <p>Đăng ký</p>
-                            <ArrowRightIcon />
+                            >
+                                <p>Bạn chưa có tài khoản?</p>
+                                <div 
+                                    className='redirectToRegister'
+                                    onClick={() => {
+                                        navigate("/register");
+                                    }}
+                                >
+                                    <p>Đăng ký</p>
+                                    <ArrowRightIcon />
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </main>
         </div>
     )
 }
