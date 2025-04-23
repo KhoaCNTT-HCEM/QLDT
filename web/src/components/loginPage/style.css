@@ -1,6 +1,6 @@
 .loginPage {
     /* height: 765.6px; */
-    /* position: relative; */
+    position: relative;
     color: #FFFFFF;
 }
 
@@ -18,21 +18,23 @@
     align-items: center;
     justify-content: center;
     /* background-color: rgba(0, 0, 0, 0.5); */
-    border-image: fill 0 radial-gradient(#00000080, #ffffffbb);
+    /* border-image: fill 0 radial-gradient(#00000080, #ffffffbb); */
 }
 
 .loginPage .overlay .content {
     width: 500px;
-    padding: 35px 50px;
+    padding: 80px 35px;
     display: flex;
     flex-direction: column;
     border-radius: 20px;
-    /* background-color: rgba(0, 0, 0, 0.75); */
+    background-color:rgb(102 102 102 / 58%);
     backdrop-filter: blur(50px);
+    margin-top: 50%;
 }
 
 .loginPage .overlay .content h1 {
     text-align: center;
+    padding-bottom: 5%;
 }
 
 .loginPage .overlay .content .loginForm {
@@ -47,6 +49,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    padding-bottom: 5%;
 }
 
 .loginPage .overlay .content .loginForm .row label {
@@ -101,12 +104,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5px;
-    margin-top: 15px;
+    gap: 15px;
+    margin-top: 35px;
 }
 
 .loginPage .overlay .content .groupRedirectToRegister .redirectToRegister {
-    width: 55px;
+    /* width: 55px; */
     display: flex;
     align-items: center;
     gap: 2px;
