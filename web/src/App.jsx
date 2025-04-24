@@ -1,24 +1,24 @@
 import { useState } from 'react';
-import { Route, Routes } from 'react-router-dom';
-import LoginPage from './components/loginPage';
-import RegisterPage from './components/registerPage';
-import LogoHeader from './icon/LogoHeader/LogoHeader.jsx';
-
+import AuthContainer from './components/authContainer/AuthAccount';
 import './App.css'
+import LogoHeader from './icon/LogoHeader/LogoHeader';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [isRightPanelActive, setIsRightPanelActive] = useState(false);
+
+  const handleSignUpClick = () => {
+    setIsRightPanelActive(true);
+  };
+
+  const handleSignInClick = () => {
+    setIsRightPanelActive(false);
+  };
 
   return (
     <div className='container'>
-      {/* <header>
-        <LogoHeader/>
-      </header> */}
-      <Routes>
-        <Route path='/' element={<LoginPage />} />
-        <Route path="/register" element={<RegisterPage />} />
-        {/* <Route path='/logoHeader' element={<LogoHeader />} /> */}
-      </Routes>
+      <main>
+        <AuthContainer />
+      </main>
     </div>
   )
 }
