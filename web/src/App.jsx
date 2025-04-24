@@ -1,7 +1,8 @@
 import { useState } from 'react';
-import AuthContainer from './components/authContainer/AuthAccount';
+import AuthContainer from './page/authContainer/AuthAccount';
 import './App.css'
 import LogoHeader from './icon/LogoHeader/LogoHeader';
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
   const [isRightPanelActive, setIsRightPanelActive] = useState(false);
@@ -17,7 +18,9 @@ function App() {
   return (
     <div className='container'>
       <main>
-        <AuthContainer />
+        <Routes>
+          <Route path="/" element={<AuthContainer />}/>
+        </Routes>
       </main>
     </div>
   )
