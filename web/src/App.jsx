@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import AuthContainer from './page/authContainer/AuthAccount';
+// import AuthContainer from './page/authContainer/AuthAccount';
 import './App.css'
 import LogoHeader from './icon/LogoHeader/LogoHeader';
 import { Route, Routes } from 'react-router-dom';
@@ -20,7 +20,7 @@ function App() {
     <div className='container'>
       <main>
         <Routes>
-          <Route path="/" element={<AuthContainer />}/>
+          {/* <Route path="/" element={<AuthContainer />}/> */}
           <Route
             path="/profile/:activepage"
             element={<ProfilePage />}

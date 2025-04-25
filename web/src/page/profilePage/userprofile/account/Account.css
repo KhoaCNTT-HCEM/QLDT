@@ -22,11 +22,11 @@
   gap: 10px;
 }
 
-.account .form .otherInfo > div {
+/* .account .form .otherInfo > div {
   display: flex;
   align-items: center;
   gap: 20px;
-}
+} */
 
 .account .form .otherInfo > div h4 {
   width: 120px;
