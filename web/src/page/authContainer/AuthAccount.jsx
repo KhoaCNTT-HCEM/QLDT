@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Login from '../login/index.jsx';
 import Register from '../register/index.jsx';
-import '../../App.css'
+import './style.css'
 import LogoHeader from "../../icon/LogoHeader/LogoHeader.jsx";
 
 
@@ -43,7 +43,7 @@ const AuthContainer = () => {
                                         <>
                                             <h1>Xin Chào!</h1>
                                             <p>Chúc giáo viên một ngày tốt lành</p>
-                                            <button className="ghost" onClick={handleSwitch}>Đăng kí</button>
+                                            <button className="ghost" onClick={handleSwitch}>Đăng ký</button>
                                         </>
                                     )}
                                 </div>
