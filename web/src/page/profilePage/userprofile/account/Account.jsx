@@ -22,7 +22,7 @@ const Account = () => {
             />
           </div>
           <div className='grPosition'>
-            <h4 htmlFor="position">chức vụ:</h4>
+            <h4 htmlFor="position">Chức vụ:</h4>
             <input
               type="text"
               id="position"

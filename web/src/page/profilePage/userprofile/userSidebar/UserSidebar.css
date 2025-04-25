@@ -3,6 +3,8 @@
   height: 100%;
   display: flex;
   flex-direction: column;
+  border: 1px solid rgb(207, 207, 207);
+  border-radius: 5px;
 }
 .usersidebar .s1, .usersidebar .s2 {
     display: flex;
@@ -19,7 +21,7 @@
     background-color: rgb(246, 246, 246);
     border-radius: 5px;
     cursor: pointer;
-    color: gray;
+    color: rgb(128, 128, 128);
 }
 .usersidebar .s2{
     background-color: rgb(246, 246, 246);
