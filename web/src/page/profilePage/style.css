@@ -26,7 +26,6 @@
   margin-top: 10vh;
   margin-bottom: 10vh;
   gap: 20px;
-
 }
 .profile .profilein .left {
   width: 20%;
@@ -36,7 +35,7 @@
 }
 .profile .profilein .right {
   width: 40%;
-  border: 5px solid rgb(207, 207, 207);
+  border: 2px solid rgb(207, 207, 207);
   border-radius: 5px;
   /* min-height: 90vh; */
 }
