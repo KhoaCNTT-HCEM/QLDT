@@ -1,5 +1,5 @@
 import React from "react";
-import "../../App.css";
+import "../authContainer/style.css";
 
 const Login = ({ onSwitch }) => {
     return (
