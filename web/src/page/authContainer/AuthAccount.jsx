@@ -24,7 +24,7 @@ const AuthContainer = () => {
                     <div className="title">
                         <h2>PHẦN MỀM QUẢN LÝ ĐÀO TẠO KHOA CNTT - HCEM</h2>
                     </div>
-                    <div className={`container ${isSignUp ? "right-panel-active" : ""}`}>
+                    <div className={`container-form ${isSignUp ? "right-panel-active" : ""}`}>
                         {isSignUp ? (
                             <Register onSwitch={handleSwitch} />
                         ) : (
