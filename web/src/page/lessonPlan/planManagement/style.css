@@ -1,0 +1,10 @@
+.postManage {
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+  padding: 0 8%;
+}
+
+.postManage h3 {
+  text-align: center;
+}

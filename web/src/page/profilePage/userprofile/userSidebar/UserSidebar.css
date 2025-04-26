@@ -18,18 +18,21 @@
     color: gray;
 }
 .usersidebar .s1:hover{
-    background-color: rgb(246, 246, 246);
+    background-color: rgb(77, 188, 252);
     border-radius: 5px;
     cursor: pointer;
-    color: rgb(128, 128, 128);
+    color: rgb(126, 128, 129);
 }
 .usersidebar .s2{
     background-color: rgb(246, 246, 246);
     border-radius: 5px;
     cursor: pointer;
-    color: gray;
+    color: rgb(255, 55, 55);
 }
 .style{
     text-decoration: none;
     color: inherit;
+}
+.usersidebar .s2 .icon{
+    color: rgb(255, 55, 55);
 }
