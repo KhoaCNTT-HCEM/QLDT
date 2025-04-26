@@ -1,6 +1,6 @@
 import React from 'react';
 import './style.css';
-import banner from "../../assets/banner5.png"
+import banner from "../../assets/banner.jpeg"
 import { useParams } from 'react-router-dom';
 import UserSidebar from './userprofile/userSidebar/UserSidebar.jsx';
 import Account from './userprofile/account/Account.jsx';

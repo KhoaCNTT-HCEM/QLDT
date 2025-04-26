@@ -2,7 +2,7 @@ import React from 'react';
 import '../authContainer/style.css'
 const Register = () => {
   return (
-    <div>
+    <div >
       <div className="form-container sign-up-container">
         <form className='auth-form' action="#">
           <h1 className='auth-title'>Đăng ký</h1>
