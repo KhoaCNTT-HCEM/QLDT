@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import AuthContainer from './page/authContainer/AuthAccount';
 import './App.css'
-import LogoHeader from './icon/LogoHeader/LogoHeader';
 import { Route, Routes } from 'react-router-dom';
 import ProfilePage from './page/profilePage';
 import Home from './page/home/home';
@@ -18,7 +17,7 @@ function App() {
   };
 
   return (
-    <div className=''>
+    <div className='main'>
       <main>
         <Routes>
           <Route path="/" element={<AuthContainer />} />
@@ -27,6 +26,7 @@ function App() {
             path="/profile/:activepage"
             element={<ProfilePage />}
           />
+          
         </Routes>
       </main>
     </div>
