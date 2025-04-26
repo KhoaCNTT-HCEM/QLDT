@@ -4,6 +4,7 @@ import './App.css'
 import LogoHeader from './icon/LogoHeader/LogoHeader';
 import { Route, Routes } from 'react-router-dom';
 import ProfilePage from './page/profilePage';
+import Home from './page/home/home';
 
 function App() {
   const [isRightPanelActive, setIsRightPanelActive] = useState(false);
@@ -20,7 +21,8 @@ function App() {
     <div className=''>
       <main>
         <Routes>
-          <Route path="/" element={<AuthContainer />}/>
+          <Route path="/" element={<AuthContainer />} />
+          <Route path="/home" element={<Home />} />
           <Route
             path="/profile/:activepage"
             element={<ProfilePage />}
