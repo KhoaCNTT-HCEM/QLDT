@@ -1,9 +1,8 @@
-
-/* * {
+* {
   box-sizing: border-box;
-} */
+}
 
-body {
+.auth-container {
   background: #f6f5f7;
   display: flex;
   justify-content: center;
@@ -14,25 +13,21 @@ body {
   margin: -20px 0 50px;
 }
 
-h1 {
+.auth-title {
   font-weight: bold;
   margin: 0;
 }
 
-/* h2 {
+.auth-header-title {
   text-align: center;
-} */
+}
 
-p {
+.auth-text {
   font-size: 14px;
   font-weight: 100;
   line-height: 20px;
   letter-spacing: 0.5px;
   margin: 20px 0 30px;
-}
-
-span {
-  font-size: 12px;
 }
 
 a {
@@ -42,7 +37,7 @@ a {
   margin: 15px 0;
 }
 
-button {
+.auth-btn {
   border-radius: 20px;
   border: 1px solid #015eb3;
   background-color: #015eb3;
@@ -55,26 +50,26 @@ button {
   transition: transform 80ms ease-in;
 }
 
-button:active {
+.auth-btn:active {
   transform: scale(0.95);
 }
 
-button:focus {
+.auth-btn:focus {
   outline: none;
 }
 
-button.ghost {
+.auth-btn {
   background-color: transparent;
   border-color: #FFFFFF;
 }
 
-button:hover {
+.auth-btn:hover {
   background-color: #41a3ff;
   border-color: #41a3ff;
   cursor: pointer;
 }
 
-form {
+.auth-form {
   background-color: #f6f6f6;
   display: flex;
   align-items: center;
@@ -85,7 +80,7 @@ form {
   text-align: center;
 }
 
-input {
+.auth-input {
   background-color: #eee;
   border: none;
   border-radius: 8px;
@@ -218,7 +213,8 @@ input {
 .container.right-panel-active .overlay-right {
   transform: translateX(20%);
 }
-.title h2{
+
+.title h2 {
   color: #015eb3;
   text-align: center;
 }

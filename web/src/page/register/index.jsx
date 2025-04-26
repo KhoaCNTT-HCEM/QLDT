@@ -2,15 +2,15 @@ import React from 'react';
 import '../authContainer/style.css'
 const Register = () => {
   return (
-    <div>
+    <div >
       <div className="form-container sign-up-container">
-        <form action="#">
-          <h1>Đăng ký</h1>
-          <input type="email" placeholder="Email" />
-          <input type="text" placeholder="Tên giáo viên" />
-          <input type="password" placeholder="Nhập mật khẩu" />
-          <input type="password" placeholder="Nhập lại mật khẩu" />
-          <button>Đăng ký</button>
+        <form className='auth-form' action="#">
+          <h1 className='auth-title'>Đăng ký</h1>
+          <input className='auth-input' type="email" placeholder="Email" />
+          <input className='auth-input' type="text" placeholder="Tên giáo viên" />
+          <input className='auth-input' type="password" placeholder="Nhập mật khẩu" />
+          <input className='auth-input' type="password" placeholder="Nhập lại mật khẩu" />
+          <button className='auth-btn'>Đăng ký</button>
         </form>
       </div>
     </div>

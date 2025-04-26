@@ -14,7 +14,7 @@ const AuthContainer = () => {
     };
     return (
         <>
-            <div>
+            <div className="auth-container">
                 <header>
                     <div className="logo">
                         <LogoHeader />
@@ -22,7 +22,7 @@ const AuthContainer = () => {
                 </header>
                 <main>
                     <div className="title">
-                        <h2>PHẦN MỀM QUẢN LÝ ĐÀO TẠO KHOA CNTT - HCEM</h2>
+                        <h2 className="auth-header-title">PHẦN MỀM QUẢN LÝ ĐÀO TẠO KHOA CNTT - HCEM</h2>
                     </div>
                     <div className={`container ${isSignUp ? "right-panel-active" : ""}`}>
                         {isSignUp ? (
@@ -35,15 +35,15 @@ const AuthContainer = () => {
                                 <div className={`overlay-panel ${isSignUp ? "overlay-left" : "overlay-right"}`}>
                                     {isSignUp ? (
                                         <>
-                                            <h1>Xin Chào!</h1>
-                                            <p>Nhập thông tin cá nhân của bạn ở đây để tạo tài khoản của riêng bạn</p>
-                                            <button className="ghost" onClick={handleSwitch}>Đăng nhập</button>
+                                            <h1 className="auth-title">Xin Chào!</h1>
+                                            <p className="auth-text">Nhập thông tin cá nhân của bạn ở đây để tạo tài khoản của riêng bạn</p>
+                                            <button className="auth-btn" onClick={handleSwitch}>Đăng nhập</button>
                                         </>
                                     ) : (
                                         <>
-                                            <h1>Xin Chào!</h1>
-                                            <p>Chúc giáo viên một ngày tốt lành</p>
-                                            <button className="ghost" onClick={handleSwitch}>Đăng ký</button>
+                                            <h1 className="auth-title">Xin Chào!</h1>
+                                            <p className="auth-text">Chúc giáo viên một ngày tốt lành</p>
+                                            <button className="auth-btn" onClick={handleSwitch}>Đăng ký</button>
                                         </>
                                     )}
                                 </div>
